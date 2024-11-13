@@ -1,0 +1,15 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "miniU",
+  "description": "大学生权益服务平台",
+  "appid": "wxc3fa8cfbdbc4962e",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": false,
+    "compileHotReLoad": false,
+    "postcss": false,
+    "minified": true
+  },
+  "compileType": "miniprogram"
+}
