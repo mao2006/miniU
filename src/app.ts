@@ -1,14 +1,12 @@
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
+import { createApp } from "vue";
+import { createPinia } from "pinia";
+import piniaPluginPersistedstate from "pinia-plugin-persistedstate";
+import "./app.scss";
+const pinia = createPinia();
+pinia.use(piniaPluginPersistedstate);
 
-import './app.scss'
+const App = createApp({});
 
-const App = createApp({
-  onShow(options) {
-  },
-  // 入口组件不需要实现 render 方法，即使实现了也会被 taro 所覆盖
-})
+App.use(pinia);
 
-App.use(createPinia())
-
-export default App
+export default App;

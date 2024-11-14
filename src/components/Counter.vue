@@ -6,7 +6,7 @@
 </template>
 
 <script setup="ts">
-import { useCounterStore } from '@/stores/counter'
+import { useCounterStore } from '../stores/counter'
 const counter = useCounterStore()
 
 const onAdd = () => {
